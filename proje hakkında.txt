@@ -1,0 +1,8 @@
+ 
+cloudflared config.yml'da 
+bu şekilde 
+ - hostname: countryincek.testprocess.com.tr
+    path: ^/api/.*
+    service: http://localhost:5000
+  - hostname: countryincek.testprocess.com.tr
+    service: http://localhost:3000
