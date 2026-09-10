@@ -5,5 +5,5 @@ services:
     build: .
     container_name: countryincek
     ports:
-      - "5000:80" # Cloudflare panelinde 5000 portunu tanımladıysanız bu şekilde kalsın; 3000 tanımladıysanız "3000:80" yapın
+      - "3000:80" # Cloudflare panelinde 5000 portunu tanımladıysanız bu şekilde kalsın; 3000 tanımladıysanız "3000:80" yapın
     restart: always
