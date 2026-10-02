@@ -6,4 +6,12 @@ services:
     container_name: countryincek
     ports:
       - "3000:80" # Cloudflare panelinde 5000 portunu tanımladıysanız bu şekilde kalsın; 3000 tanımladıysanız "3000:80" yapın
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html:ro
+      - ./data.js:/usr/share/nginx/html/data.js:ro
+      - ./index.js:/usr/share/nginx/html/index.js:ro
+      - ./style.css:/usr/share/nginx/html/style.css:ro
+      - ./img:/usr/share/nginx/html/img:ro
+      - ./vendor:/usr/share/nginx/html/vendor:ro
+      - ./tiles:/usr/share/nginx/html/tiles:ro
     restart: always
