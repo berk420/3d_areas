@@ -271,7 +271,9 @@
 
     // Add click event handler.
     wrapper.addEventListener('click', function() {
-      switchScene(findSceneById(hotspot.target));
+      var targetScene = findSceneById(hotspot.target);
+      console.log('Hotspot navigation:', targetScene.data.id, targetScene.data.name);
+      switchScene(targetScene);
     });
 
     // Prevent touch and scroll events from reaching the parent element.
